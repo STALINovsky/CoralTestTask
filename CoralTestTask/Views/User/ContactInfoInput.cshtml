@@ -1,0 +1,92 @@
+﻿@model UserContactInfo
+
+<div class="tab mt-1">
+    <h3 class="card-header text-left">Contact Info:</h3>
+
+    <div class="row">
+        <div class="col-md-6 mt-3">
+            <div><span asp-validation-for="Salutation" class="text-danger"></span></div>
+            <div class="form-group row">
+                <label asp-for="Salutation" class="col-2 col-form-label"></label>
+                <div class="col-10">
+                    <input asp-for="Salutation" class="form-control">
+                </div>
+            </div>
+
+            <div><span asp-validation-for="FirstName" class="text-danger"></span></div>
+            <div class="form-group row">
+                <label asp-for="FirstName" class="col-2 col-form-label"></label>
+                <div class="col-10">
+                    <input asp-for="FirstName" class="form-control">
+                </div>
+            </div>
+
+            <div><span asp-validation-for="MiddleName" class="text-danger"></span></div>
+            <div class="form-group row">
+                <label asp-for="MiddleName" class="col-2 col-form-label"></label>
+                <div class="col-10">
+                    <input asp-for="MiddleName" class="form-control">
+                </div>
+            </div>
+
+            <div><span asp-validation-for="LastName" class="text-danger"></span></div>
+            <div class="form-group row">
+                <label asp-for="LastName" class="col-2 col-form-label"></label>
+                <div class="col-10">
+                    <input asp-for="LastName" class="form-control">
+                </div>
+            </div>
+
+            <div><span asp-validation-for="Company" class="text-danger"></span></div>
+            <div class="form-group row">
+                <label asp-for="Company" class="col-2 col-form-label"></label>
+                <div class="col-10">
+                    <input asp-for="Company" class="form-control">
+                </div>
+            </div>
+
+            <div><span asp-validation-for="Title" class="text-danger"></span></div>
+            <div class="form-group row">
+                <label asp-for="Title" class="col-2 col-form-label"></label>
+                <div class="col-10">
+                    <input asp-for="Title" class="form-control">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mt-3">
+            <div class="form-group row">
+
+                <div><span asp-validation-for="Email" class="text-danger"></span></div>
+                <label asp-for="Email" class="col-2 col-form-label"></label>
+                <div class="col-10">
+                    <input asp-for="Email" class="form-control">
+                </div>
+            </div>
+
+            <div><span asp-validation-for="Phone" class="text-danger"></span></div>
+            <div class="form-group row">
+                <label asp-for="Phone" class="col-2 col-form-label"></label>
+                <div class="col-10">
+                    <input asp-for="Phone" class="form-control">
+                </div>
+            </div>
+
+            <div><span asp-validation-for="Fax" class="text-danger"></span></div>
+            <div class="form-group row">
+                <label asp-for="Fax" class="col-2 col-form-label"></label>
+                <div class="col-10">
+                    <input asp-for="Fax" class="form-control">
+                </div>
+            </div>
+            
+            <div><span asp-validation-for="MobilePhone" class="text-danger"></span></div>
+            <div class="form-group row">
+                <label asp-for="MobilePhone" class="col-2 col-form-label"></label>
+                <div class="col-10">
+                    <input asp-for="MobilePhone" class="form-control">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

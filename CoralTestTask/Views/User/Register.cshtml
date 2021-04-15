@@ -1,0 +1,38 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-12">
+        <h2 class="text-left">New User Registration</h2>
+    </div>
+</div>
+
+<div class="text-center">
+
+    <form asp-controller="User" asp-action="Register" id="regForm">
+        
+        <partial name="ContactInfoInput" for="ContactInfo" />
+        <partial name="BusinessAreaInput" for="BusinessArea"/>
+        <partial name="AdressInput" for="Address"/>
+
+        <div class="row">
+            <div class="text-center col-12 mt-3">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div style="float: right;">
+                    <button type="button" id="prevBtn" onclick="shift(-1)">Previous</button>
+                    <button type="button" id="nextBtn" onclick="shift(1)">Next</button>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>

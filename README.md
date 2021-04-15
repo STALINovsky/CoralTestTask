@@ -1,2 +1,2 @@
 # CoralTestTask
-To start project wite update-database in package manager console 
+To start project write update-database in package manager console 
